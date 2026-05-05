@@ -1,6 +1,7 @@
 package com.dsa.recursion.backtracking;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CombinationSum {
@@ -11,6 +12,7 @@ public class CombinationSum {
     }
 
     static List<List<Integer>> combinationSum(int[] candidates, int target) {
+        Arrays.sort(candidates);
         List<List<Integer>> subsets = new ArrayList<>();
         List<Integer> current = new ArrayList<>();
         int i = 0;
