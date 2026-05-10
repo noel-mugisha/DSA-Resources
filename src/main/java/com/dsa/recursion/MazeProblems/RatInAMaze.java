@@ -17,7 +17,7 @@ public  class RatInAMaze {
     static List<String> findPath(int[][] maze) {
         List<String> paths = new ArrayList<>();
         StringBuilder current = new StringBuilder();
-        if (maze[0][0] == 0) return paths;
+        if (maze[0][0] == 0 || maze[maze.length-1][maze[0].length-1] == 0) return paths;
         backtrack (maze, 0, 0, current, paths);
         Collections.sort(paths);
         return paths;
