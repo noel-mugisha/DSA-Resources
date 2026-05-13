@@ -1,7 +1,5 @@
 package com.dsa.recursion.MazeProblems;
 
-import java.util.Arrays;
-
 public class UniquePaths {
     public static void main(String[] args) {
         System.out.println(uniquePaths(3, 3));
