@@ -17,11 +17,11 @@ public class JumpGameIII {
         int temp = arr[start];
         arr[start] *= -1;
 
-        boolean foudZero = canReach(arr,start + temp)
+        boolean foundZero = canReach(arr,start + temp)
                 || canReach(arr, start - temp);
 
         arr[start] = temp;
 
-        return foudZero;
+        return foundZero;
     }
 }
