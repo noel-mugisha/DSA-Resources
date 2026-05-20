@@ -34,18 +34,17 @@ public class NKnights {
         if (row == n)
             return;
 
-        if (col == n) {
+        if (col == n)
             backtrack(board, n, row + 1, 0, remaining, nKnights);
-            return;
-        }
+        else {
+            if (isSafe(board, row, col, n)) {
+                board[row][col] = 'K';
+                backtrack(board, n, row, col+1, remaining-1, nKnights);
+                board[row][col] = '.';
+            }
 
-        if (isSafe(board, row, col, n)) {
-            board[row][col] = 'K';
-            backtrack(board, n, row, col+1, remaining-1, nKnights);
-            board[row][col] = '.';
+            backtrack(board, n, row, col + 1, remaining, nKnights);
         }
-
-        backtrack(board, n, row, col + 1, remaining, nKnights);
     }
 
     static boolean isSafe(char[][] board, int row, int col, int n) {
