@@ -86,7 +86,7 @@ public class CustomArrayList {
         for (int i = 0; i < size; i++) {
             sb.append(nums[i]);
             if (i < size - 1)
-                sb.append(", ");
+                sb.append(",");
         }
         sb.append("]");
         return sb.toString();
