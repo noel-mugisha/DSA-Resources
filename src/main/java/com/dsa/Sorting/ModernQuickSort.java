@@ -62,6 +62,7 @@ public class ModernQuickSort {
         // we use this approach:
 
 //        int randIndex = start + new Random().nextInt(end - start + 1);
+        // The nextInt() method only gives nums from 0 to n-1
 //        swap(arr, start, randIndex);
 
         int lt = start, gt = end;
