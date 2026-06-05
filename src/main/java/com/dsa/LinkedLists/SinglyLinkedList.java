@@ -163,6 +163,22 @@ public class SinglyLinkedList {
         size = 0;
     }
 
+    public void insertUsingRec(int value, int index) {
+        checkPositionIndex(index);
+        head = helper(head, value, index);
+    }
+
+    private Node helper(Node temp, int value, int index) {
+        if (index == 0) {
+            Node node = new Node(value);
+            node.next = temp;
+            size++;
+            return node;
+        }
+        temp.next = helper(temp.next, value, index-1);
+        return temp;
+    }
+
     private Node getNode(int index) {
         checkElementIndex(index);
         Node temp = head;
