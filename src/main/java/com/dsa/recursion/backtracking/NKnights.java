@@ -56,6 +56,6 @@ public class NKnights {
         if (row < 0 || col < 0 || col >= n)
             return true;
 
-        return (board[row][col] == 'K') ? false : true;
+        return board[row][col] != 'K';
     }
 }
