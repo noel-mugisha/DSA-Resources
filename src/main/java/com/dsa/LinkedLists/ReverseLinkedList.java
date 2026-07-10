@@ -25,4 +25,18 @@ public class ReverseLinkedList {
 
         return newHead;
     }
+
+    ListNode reverseWithInsertionHead(ListNode head) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+        while (head.next != null) {
+            ListNode temp = head.next;
+            head.next = head.next.next;
+            temp.next = dummy.next;
+            dummy.next = temp;
+        }
+
+        return dummy.next;
+    }
 }
