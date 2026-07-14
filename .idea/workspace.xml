@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5f77b3f-63cd-4b7f-b435-e9881bb9b270" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dsa/trees/learning/BFS.java" afterDir="false" />
+    <list default="true" id="b5f77b3f-63cd-4b7f-b435-e9881bb9b270" name="Changes" comment="BFS">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dsa/trees/learning/AVLTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dsa/trees/learning/rotations" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/trees/questions/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dsa/trees/questions/TreeNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,16 @@
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/noel-mugisha/DSA-Resources.git&quot;,
     &quot;accountId&quot;: &quot;298b78da-9395-4600-85b5-ffc70fd42441&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;noel-mugisha&quot;,
+    &quot;repository&quot;: &quot;DSA-Resources&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -58,10 +68,11 @@
     "Application.Playground.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "BFS",
+    "git-widget-placeholder": "AVLs",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
@@ -88,7 +99,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-50341a9f1f9c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.26222.68" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
       </set>
     </attachedChunks>
   </component>
@@ -101,6 +113,15 @@
       <updated>1783849010062</updated>
       <workItem from="1783874119234" duration="39000" />
     </task>
+    <task id="LOCAL-00001" summary="BFS">
+      <option name="closed" value="true" />
+      <created>1783928223294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783928223294</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
