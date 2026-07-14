@@ -1,0 +1,46 @@
+So here is how rotations are done:
+
+    balance = height(node.left) - height(node.right)
+
+    Balanced:
+    -1 <= balance <= 1
+
+    Left heavy:
+    balance > 1
+
+    Right heavy:
+    balance < -1
+
+1- Left rotation: Done when right side is heavy, this is how it is done give a root node as reference node
+
+    right_node = root.right
+    root.right = right_node.left
+    right_node.left = root
+
+    return right_node
+
+2- Right rotation: Done when left side is heavy, this is how it is done give a root node as reference node
+
+    left_node = root.left
+    root.left = left_node.right
+    left_node.right = root
+
+    return left_node
+
+
+3- So this is how we will handle any left heavy nodes (LL and LR cases)
+
+    if balance(node) > 1:
+        if balance(node.left) < 0:
+            node.left = leftRotate(node.left)
+
+        return rightRotate(node) // it will use right and left rotate functions in the above
+
+
+4- So this is how we will handle any left heavy nodes (RR and RL cases)
+
+    if balance(node) < -1:
+        if balance(node.right) > 0:
+            node.right = rightRotate(node.right)
+
+        return leftRotate(node)
