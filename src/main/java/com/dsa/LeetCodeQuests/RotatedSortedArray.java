@@ -41,11 +41,6 @@ public class RotatedSortedArray {
                 end = mid;
 
             else
-                if (nums[start] > nums[start+1])
-                    return start + 1;
-                start++;
-                if (nums[end] < nums[end-1])
-                    return end;
                 end--;
         }
 
