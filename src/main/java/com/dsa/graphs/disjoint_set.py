@@ -2,6 +2,8 @@ class Disjoint_set_union:
     def __init__(self, n):
         self.parent = [i for i in range(n)]
         self.size = [1] * n
+        # To tell us how many connected components are there?
+        self.components = n
 
     def find(self, x) -> int:
         if self.parent[x] != x:
@@ -22,4 +24,5 @@ class Disjoint_set_union:
         self.parent[root_y] = root_x
         self.size[root_x] += self.size[root_y]
 
+        self.components -= 1
         return True
